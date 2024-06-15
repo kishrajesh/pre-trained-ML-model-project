@@ -1,0 +1,72 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:              Doctor_Who_01.jpg  label:                 doctor who
+ 3 key:        Peregrine_Falcon_01.jpg  label:           peregrine falcon
+ 4 key:                     Dog_02.jpg  label:                        dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:        standard poodle, poodle
+
+             Doctor_Who_01.jpg: 
+Real:                 doctor who   Classifier:               bulletproof vest
+
+       Peregrine_Falcon_01.jpg: 
+Real:           peregrine falcon   Classifier:                           kite
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:        standard poodle, poodle
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:        standard poodle, poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Doctor_Who_01.jpg: 
+Real:                 doctor who   Classifier:               bulletproof vest  
+PetLabelDog: 0  ClassLabelDog: 0
+
+       Peregrine_Falcon_01.jpg: 
+Real:           peregrine falcon   Classifier:                           kite  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:        standard poodle, poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Using model architecture vgg
+There are 4 total images in the dataset
+There are 2 total dog images in the dataset
+There are 2 total non-dog images in the dataset
+The model has a 100.0 % rate of classifying dogs correctly. 
+The model has a 0.0 % rate of classifying dog breeds correctly.
+The model has a 100.0 % rate of classifying non-dogs correctly. 
+The model has a 0.0 % rate of classifying an animal correctly.
+The model classifies breeds incorrectly in the following cases:
+The breed is dog and the classification is standard poodle, poodle.
+The breed is dog and the classification is standard poodle, poodle.
+
+** Total Elapsed Runtime: 0:0:5
